@@ -104,7 +104,7 @@ Clustering algorithms can be categorized into:
 - **Point Classification Details**:  
   - A point \( p \) is a **core point** if at least **MinPts** points are within distance **eps** of it.  
   - A point \( q \) is **directly reachable** from \( p \) if \( q \) is within distance **eps** from core point \( p \).  
-  - A point \( q \) is **density reachable** from \( p \) if there is a path \( p_1, ..., p_n \) where each \( p_{i+1} \) is directly reachable from \( p_i \).  
+  - A point \( q \) is **density reachable** from \( p \) if there is a path \( p_1, ..., p_n \) where each \( $p_{i+1}$ \) is directly reachable from \( p_i \).  
   - Two points \( p \) and \( q \) are **density connected** if there is a core point \( x \) such that both \( p \) and \( q \) are density reachable from \( x \).  
   - All points not reachable from any other point are **outliers** or **noise points**.  
 
@@ -136,7 +136,7 @@ Clustering algorithms can be categorized into:
 
 - **Tasks**:  
   1. Apply DBSCAN with **eps = 2** and **MinPts = 2** (Euclidean distance).  
-  2. Apply DBSCAN with **eps = \(\sqrt{10}\)** and **MinPts = 2**.  
+  2. Apply DBSCAN with $eps = (\sqrt{10})$ and **MinPts = 2**.  
   3. Draw a 10x10 grid to illustrate the clusters and outliers for each epsilon value.  
 
 ---

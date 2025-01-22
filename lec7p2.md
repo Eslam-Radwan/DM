@@ -12,9 +12,9 @@
 
 ### Common Similarity Measures
 - **Interval-scaled vectors:**
-  - Euclidean distance: \( d(x,y) = \sqrt{\sum_{j=1}^{n} (x_j - y_j)^2} \)
-  - Manhattan (L1) distance: \( d(x,y) = \sum_{j=1}^{n} |x_j - y_j| \)
-  - Cosine measure: \( s(x,y) = \frac{x \cdot y}{\|x\| \|y\|} \) (not a metric)
+  - Euclidean distance: \( d(x,y) = $\sqrt{\sum_{j=1}^{n} (x_j - y_j)^2}$ \)
+  - Manhattan (L1) distance: \( d(x,y) = $\sum_{j=1}^{n} |x_j - y_j|$\)
+  - Cosine measure: \( s(x,y) = $\frac{x \cdot y}{\|x\| \|y\|}$ \) (not a metric)
   - Commonly used in document clustering
 
 ### Clustering Strategies
@@ -26,12 +26,12 @@
 - **(Connectivity Based) Hierarchical clustering:**
   - Clustering formed by composition or decomposition.
   - History of composition / decomposition operations forms a hierarchical relationship.
-  - **Agglomerative (bottom-up) approach:**
-    - Larger clusters formed by merging smaller clusters.
-    - Usually terminates when all clusters merged (but earlier termination is possible).
-  - **Divisive (top-down) approach:**
-    - Smaller clusters formed by splitting larger clusters.
-    - Often terminates when leaf clusters contain exactly one element (but earlier termination is possible).
+	  - **Agglomerative (bottom-up) approach:**
+	    - Larger clusters formed by merging smaller clusters.
+	    - Usually terminates when all clusters merged (but earlier termination is possible).
+	  - **Divisive (top-down) approach:**
+	    - Smaller clusters formed by splitting larger clusters.
+	    - Often terminates when leaf clusters contain exactly one element (but earlier termination is possible).
 
 - **Density-based clustering:**
   - Clusters grow into regions of high density.
@@ -70,9 +70,9 @@
 
 ### Inter-Cluster Distance
 - Common measures:
-  - Minimum distance (single linkage): \( d_{\text{min}}(A,B) = \min d(a,b) \)
-  - Maximum distance (complete linkage): \( d_{\text{max}}(A,B) = \max d(a,b) \)
-  - Average distance: \( d_{\text{avg}}(A,B) = \frac{1}{|A| \cdot |B|} \sum_{a \in A, b \in B} d(a,b) \)
+  - Minimum distance (single linkage): \( $d_{\text{min}}(A,B) = \min d(a,b)$ \)
+  - Maximum distance (complete linkage): \( $d_{\text{max}}(A,B) = \max d(a,b)$ \)
+  - Average distance: \( $d_{\text{avg}}(A,B) = \frac{1}{|A| \cdot |B|} \sum_{a \in A, b \in B} d(a,b)$ \)
 
 ### Merge / Split Strategies
 - **Single Linkage:**
@@ -84,7 +84,7 @@
 
 - **Complete Linkage:**
   - Also called Farthest Neighbour.
-  - Maximum-distance measure: \( d_{\text{max}}(A,B) = \max d(a,b) \).
+  - Maximum-distance measure: \( $d_{\text{max}}(A,B) = \max d(a,b)$ \).
   - Links determined by only two farthest objects.
   - Merge order highly influenced by noise.
   - Clusters produced are more rounded, compact.
@@ -93,7 +93,7 @@
   - Compromise between minimum and maximum distance.
   - Quadratic number of distances computed.
   - Less affected by noise.
-  - Less prone to chaining problems: \( d_{\text{avg}}(A,B) = \frac{1}{|A| \cdot |B|} \sum_{a \in A, b \in B} d(a,b) \).
+  - Less prone to chaining problems: \( $d_{\text{avg}}(A,B) = \frac{1}{|A| \cdot |B|} \sum_{a \in A, b \in B} d(a,b)$ \).
 
 ### Example (1)
 - Using the single linkage method:

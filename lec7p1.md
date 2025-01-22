@@ -119,19 +119,19 @@ Clustering algorithms can be categorized based on their cluster model, that is b
 Distance measures will determine how the similarity of two elements is calculated and will influence the shape of the clusters.  
 
 1. **Euclidean Distance (also called 2-norm distance)**:  
-   \[
+   $$
    d = \sqrt{(X_2 - X_1)^2 + (Y_2 - Y_1)^2 + (Z_2 - Z_1)^2}
-   \]  
+  $$
 
 2. **Manhattan Distance (also called taxicab norm or 1-norm)**:  
-   \[
+  $$
    d = |X_2 - X_1| + |Y_2 - Y_1| + |Z_2 - Z_1|
-   \]  
+   $$
 
 3. **Maximum Norm**:  
-   \[
+  $$
    d = \max(|X_2 - X_1|, |Y_2 - Y_1|, |Z_2 - Z_1|)
-   \]  
+  $$
 
 4. **Inner Product Space**: The angle between two vectors can be used as a distance measure when clustering high-dimensional data.  
 
@@ -148,11 +148,12 @@ The k-means algorithm is an algorithm to cluster n objects based on attributes i
 ---
 
 ### K-MEANS CLUSTERING  
-An algorithm for partitioning (or clustering) N data points into K disjoint subsets \( S_j \) containing data points so as to minimize the sum-of-squares criterion:  
-\[
+An algorithm for partitioning (or clustering) N data points into K disjoint subsets 
+\( $S_j$ \) containing data points so as to minimize the sum-of-squares criterion:  
+$$
 J = \sum_{j=1}^{K} \sum_{x \in S_j} \|x - \mu_j\|^2
-\]  
-where \( x \) is a vector representing the nth data point and \( \mu_j \) is the geometric centroid of the data points in \( S_j \).  
+$$
+where \( x \) is a vector representing the nth data point and \( $\mu_j$ \) is the geometric centroid of the data points in \( S_j \).  
 
 ---
 
